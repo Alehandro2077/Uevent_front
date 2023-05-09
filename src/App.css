@@ -1,0 +1,578 @@
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body{
+    /* border: 6px solid rgb(46, 46, 46); */
+    min-height: 100vh;
+}
+
+.wrapper{
+    /* border: 3px solid green; */
+    min-height: 100vh;
+    background-color: #e6e6e6;
+    padding-bottom: 100px;
+}
+
+.content {
+    background-color: #e6e6e6;
+    height: 100%;
+}
+ 
+header {
+    box-sizing: border-box;
+    background-color: rgb(85,  93,   176);
+    padding: 1em;
+}
+
+
+header .container {
+    height: 40px;
+    padding-right: 1.5%;
+}
+
+header .Logo,
+header .Logo:active {
+
+    font-family: Nunito;
+    letter-spacing: 0.35em;
+    color: #e2e2e2;
+    font-size: 28px;
+    text-decoration: none;
+    transition: .5s linear;
+    font-weight: 500;
+}
+
+header .Logo:hover {
+    font-family: Nunito;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .ico {
+    border-radius: 50%;
+    width: 40px;
+}
+
+header .ul {
+    margin: 0;
+    padding: 15px;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 5px;
+    border: 1px solid #e1e1e1;
+    padding: 3px;
+}
+
+
+/*profile ////////*/
+
+.profileImage {
+    padding: 0;
+    max-width: 42px;
+    max-height: 42px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+/* .imgh {
+    
+    
+} */
+
+.pMainimg {
+        max-width: 200px;
+        max-height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+}
+
+.profileBut {
+    background:rgb(255, 255, 255);
+    border-radius:8px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    width: 100%;
+}
+
+
+.eventCompM {
+    display: block;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    width: 70%;
+
+    margin-bottom: 2rem;
+}
+
+.eventImg {
+    width: 200px;
+}
+
+.mainWrapper {
+    display: flex;
+    margin-bottom: 300px;
+}
+
+/*Register Form*/
+
+#RegistrationForm {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+
+}
+
+#RegistrationForm:target {
+    display: block;
+}
+
+#Window {
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+    box-shadow: 7px 5px 5px rgba(101, 101, 101, 0.5);
+}
+
+.close {
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #e6e6ff;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #e6e6ff;
+}
+
+
+.RegistrateInput 
+{
+    width: 80%;
+    height: 15%;
+    border-radius: 3px;
+    color: #8c8c8c;
+    background-color: #f2f2f2;
+    margin-top: 5%;
+    transition: 0.2s;
+    border: 0;
+    border-bottom: 0.1em solid rgb(255, 255, 255);
+    outline: none;
+}
+.RegistrateInput::-webkit-input-placeholder 
+{
+    color: #8c8c8c;
+}
+.RegistrateInput:focus {
+    color: #393c57;
+    border: 0;
+    border-color: #fff;
+    background-color: #f7f7f7;
+    border-bottom: 0.1em solid rgb(46, 46, 46);
+}
+
+/* End Register Form*/
+
+.BurgerMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.BurgerMenuButton {
+    font-size: 18px;
+    height: 40px;
+    border-radius: 5px;
+    color: #e2e2e2;
+    border: none;
+    transition: 1 s linear;
+    font-weight: 600;
+}
+
+.DropdownContent {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 10em;
+    height: auto;
+    border-radius: 5px;
+    z-index: 10000;
+}
+
+.DropdownContent a {
+    color: black;
+    padding: 0.3em;
+    padding-left: 1em;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.DropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.BurgerMenu:hover .DropdownContent {
+    display: block;
+    transition: linear 3s;
+}
+
+.BurgerMenuButton:hover {
+
+    color: rgb(255, 255, 255);
+    transition: linear .5s;
+}
+
+.IcoBurgerMenu {
+    height: 100%;
+    width: 1em;
+    margin-right: 5px;
+}
+
+.IcoBurgerMenu1 {
+    height: 100%;
+    width: 1em;
+    margin-right: 8px;
+}
+
+
+
+
+
+.myButton {
+    background: rgb(90, 189, 65);
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 5px;
+}
+
+.myButton:hover {
+    background: rgb(84, 176, 61);
+}
+
+.eventButton {
+    background: #766db4;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 5px;
+}
+
+.eventButton:hover {
+    background: #887ec8;
+}
+
+
+
+
+.AddProductBut {
+    background-color: rgb(82, 167, 61);
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+
+    font-weight: 600;
+    color: #ddd;
+    border-radius: 5px;
+    border: 5px;
+    transition: .5s linear;
+}
+.AddProductBut:hover {
+    /* background-color: rgb(112, 193, 91); */
+    color: rgb(4,4,4);
+
+}
+.AddProductLink {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s linear;
+}
+
+.AddProductLink:hover {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+
+
+
+
+.product .CarFoto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+.product .IcoFoto {
+    width: 1.5em;
+}
+
+.product h5 {
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.product button {
+    float: right;
+    margin-bottom: 1em;
+}
+
+.Scroll .row {
+    padding-top: 1em;
+    padding-left: 7%;
+}
+
+.Scroll .col-md-1 {
+    padding: 0;
+    width: 2.5em;
+}
+
+.Scroll input {
+    font-size: 18px;
+    border-radius: 10px;
+    border: 0;
+    height: 2em;
+    width: 2em;
+    transition: linear .3s;
+}
+
+.Scroll input:hover {
+
+    background-color: rgb(187, 219, 229);
+    transition: linear .3s;
+}
+
+
+/* /* /////////////////////* */
+
+
+
+.CategoryBtn2,
+.SelectedCategoryBtn2,
+.SelectedCategoryBtn,
+.CategoryBtn {
+    width: 100px;
+}
+
+.YourAds {
+    color: #8c8c8c;
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 0.1em;
+
+}
+.YourAds:hover {
+    transition: linear 0.5s;
+    color: #000000;
+}
+
+.navBtn {
+    margin-left: 2rem;
+    color: #e3e3e3;
+    font-weight: 600;
+    transition: linear 0.2s;
+}
+.navBtn:hover {
+    transition: linear 0.5s;
+    border-bottom: 0.15em solid rgb(46, 46, 46);
+    color: #000000;
+}
+
+.selectNavBtn {
+    margin-left: 2rem;
+     color: #8c8c8c;
+    font-weight: 600;
+     transition: linear 0.2s;
+     border-bottom: 0.15em solid rgb(46, 46, 46);
+     color: #000000;
+}
+
+
+
+
+.CategoryBtn2 {
+    border: 0.2em solid #e6e6e6;
+    margin-top: 2em;
+    background-color: #e6e6e6;
+    padding-bottom: 0.5em;
+    color: #8c8c8c;
+    font-weight: 600;
+    transition: linear 0.2s;
+}
+
+.CategoryBtn {
+
+    border: 0.2em solid #e6e6e6;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    background-color: #e6e6e6;
+    padding-bottom: 0.5em;
+    color: #8c8c8c;
+    font-weight: 600;
+    transition: linear 0.2s;
+
+}
+
+.CategoryBtn:hover,
+.CategoryBtn2:hover {
+    transition: linear 0.5s;
+    border-bottom: 0.15em solid rgb(46, 46, 46);
+    color: #000000;
+}
+
+
+
+.SelectedCategoryBtn {
+    border: 0.2em solid #e6e6e6;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    background-color: #e6e6e6;
+    padding-bottom: 0.5em;
+    color: #8c8c8c;
+    font-weight: 600;
+    transition: linear 0.2s;
+    border-bottom: 0.15em solid rgb(46, 46, 46);
+    color: #000000;
+}
+
+.SelectedCategoryBtn2 {
+    border: 0.2em solid #e6e6e6;
+    margin-top: 2em;
+    background-color: #e6e6e6;
+    padding-bottom: 0.5em;
+    color: #8c8c8c;
+    font-weight: 600;
+    transition: linear 0.2s;
+    border-bottom: 0.15em solid rgb(46, 46, 46);
+    color: #000000;
+}
+
+
+
+
+
+
+
+.Profile .col-md-9 {
+    border-radius: 5px;
+    width: 97.5%;
+    margin-left: 1em;
+    margin-top: 1em;
+    background-color: rgb(255, 255, 255);
+}
+
+.Profile .col-md-8 {
+    padding-left: 0.1em;
+}
+
+.Profile .CarFoto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.Profile .IcoFoto {
+    width: 1.5em;
+}
+
+.Profile h5 {
+    float: left;
+    padding-top: 0.5em;
+}
+
+.Profile button {
+    float: right;
+    margin-bottom: 1em;
+}
+
+.Profile .OrderSettings {
+    max-height: 100%;
+    max-width: 25px;
+    float: right;
+    margin-right: 0.5em;
+    padding-top: 0.5em;
+}
+
+.DescriptionBLock {
+    height: 5em;
+    overflow: hidden;
+    /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis;
+    /* Добавляем многоточие */
+}
+
+.Description {
+    height: 5em;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+.Title {
+    font-size: 20px;
+    padding-top: 0.1em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.ImportFoto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e6e6;
+    padding: 0.5em;
+    margin: 0;
+}
